@@ -165,7 +165,7 @@
           slug = heroMap[@$store.state.me.heroConfig.thangType]
           if !slug?
             return "/images/pages/play/modal/captain.png"
-          else
+          else if slug in thangTypeConstants.heroClasses.Warrior 
             return "/images/pages/play/modal/#{slug}.png"
       comboImage: ->
         if @allConceptsUsed
